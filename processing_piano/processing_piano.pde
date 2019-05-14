@@ -20,11 +20,11 @@ void setup()
   myPort.bufferUntil('\n'); 
   
   monkey = new SoundFile(this, "monkey.mp3");
-  kirby = new SoundFile(this, "monkey.mp3");
-  howl = new SoundFile(this, "monkey.mp3");
-  moo = new SoundFile(this, "monkey.mp3");
-  toad = new SoundFile(this, "monkey.mp3");
-  soLongGayBowser = new SoundFile(this, "monkey.mp3");
+  kirby = new SoundFile(this, "kirby.mp3");
+  howl = new SoundFile(this, "howl.mp3");
+  moo = new SoundFile(this, "moo.mp3");
+ // toad = new SoundFile(this, "toad.mp3");
+  soLongGayBowser = new SoundFile(this, "soLong.mp3");
    
 }
 
