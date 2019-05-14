@@ -5,14 +5,26 @@ import processing.serial.*;
    Serial myPort;  
    String val;  
    SoundFile monkey;
+   SoundFile kirby;
+   SoundFile howl;
+   SoundFile moo;
+   SoundFile toad;
+   SoundFile soLongGayBowser;
+  
 
 void setup()
 {
 
   String portName = Serial.list()[2]; 
-  monkey = new SoundFile(this, "monkey.mp3");
   myPort = new Serial(this, portName, 9600);
   myPort.bufferUntil('\n'); 
+  
+  monkey = new SoundFile(this, "monkey.mp3");
+  kirby = new SoundFile(this, "monkey.mp3");
+  howl = new SoundFile(this, "monkey.mp3");
+  moo = new SoundFile(this, "monkey.mp3");
+  toad = new SoundFile(this, "monkey.mp3");
+  soLongGayBowser = new SoundFile(this, "monkey.mp3");
    
 }
 
@@ -30,9 +42,34 @@ void serialEvent(Serial myport){
   println(val);
   } 
  }
-  if(val.equals("5")){
+  if(val.equals("0")){
     monkey.play();
     trim(val);
-    delay(5000);
+    delay(3000);
+  }
+   if(val.equals("1")){
+    howl.play();
+    trim(val);
+    delay(3000);
+  }
+     if(val.equals("2")){
+    moo.play();
+    trim(val);
+    delay(3000);
+  }
+     if(val.equals("3")){
+    toad.play();
+    trim(val);
+    delay(3000);
+  }
+     if(val.equals("4")){
+    kirby.play();
+    trim(val);
+    delay(3000);
+  }
+     if(val.equals("5")){
+    soLongGayBowser.play();
+    trim(val);
+    delay(3000);
   }
 }
