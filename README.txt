@@ -6,3 +6,5 @@ using the Arduino IDE, and you need to run the processing code using the Process
 IDE on your computer.
 
 Make sure the Arduino is plugged into your computer!
+
+These are 1k ohm resistors
